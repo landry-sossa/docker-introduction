@@ -1,5 +1,4 @@
 
-```markdown
 # TP : Sécurisation d'une image et d'un conteneur Docker
 
 **Auteur :** Landry Sossa  
@@ -34,9 +33,10 @@ root
 # Scan des vulnérabilités
 docker scout quickview app2:initial
 
-![Docker scout ](image1.png)
 
 ```
+
+![Docker scout ](image1.png)
 
 ### 1.2 Tableau de l'état initial et des risques
 
@@ -137,12 +137,14 @@ docker run -d -p 8080:8080 --name quiz-secure \
 # Scan de la nouvelle image
 docker scout quickview landry229/app2:secure
 
-![Docker scout ](image2.png)
 
 # Publication sur le registry public
 docker push landry229/app2:secure
 
 ```
+
+![Docker scout ](image2.png)
+
 
 ### 3.2 Tableau comparatif : Avant / Après
 
